@@ -1,14 +1,8 @@
 #!/usr/bin/env ruby
 
-
-
-# question = ARGV[0]
-# puts "You asked: #{question}"
-
 asked = "You asked: "
 ARGV.each do|a|
   asked += "#{a} "
-  # puts "Argument: #{a}"
 end
 puts asked
 
@@ -39,14 +33,8 @@ answers =  [
 ]
 
 count = answers.size
-# puts "count: #{count}"
 
 rando = Random.new
-test = rando.rand(count)
-# puts "rando: #{rando}"
-# puts "test: #{test}"
-# puts "*****"
-puts "Magic 8 Ball says: #{answers[test]}"
-#take size of array
-#get random number from 0 to answers.size
-#return string at that index
+answers_index = rando.rand(count)
+
+puts "Magic 8 Ball says: #{answers[answers_index]}"
