@@ -4,7 +4,7 @@ asked = "You asked: "
 ARGV.each do|a|
   asked += "#{a} "
 end
-puts asked
+puts asked + "?"
 
 answers =  [
     # Positive
